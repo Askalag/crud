@@ -21,20 +21,25 @@ public class MainController {
     public List<User> getUsers() {
         return userService.getAllUser();
     }
-    @GetMapping("/userList/byAge/{age}")
-    public List<User> getUsersByAge(@PathVariable int age) {
-        return userService.getUserListByAge(age);
-
-    }
 
     @GetMapping("/user/{id}")
     public User getUserById(@PathVariable String id) {
-        return userService.getUserbyId(id);
+        return userService.getUserById(id);
     }
 
     @PostMapping("/user")
     public void saveUser(@RequestBody User user) {
         userService.saveUser(user);
+    }
+
+    @PutMapping("/user")
+    public void updateUser(@RequestBody User user) {
+        userService.updateUser(user);
+    }
+
+    @DeleteMapping("/user")
+    public void removeUser(@RequestBody User user) {
+        userService.removeUser(user);
     }
 
 }
