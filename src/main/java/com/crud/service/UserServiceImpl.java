@@ -1,9 +1,7 @@
 package com.crud.service;
 
 import com.crud.model.User;
-import com.crud.repository.UserRepositoryCustom;
 import com.crud.repository.UserRepository;
-import com.mongodb.MongoWriteException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -52,4 +50,11 @@ public class UserServiceImpl implements UserService{
     public void removeUser(User user) {
         userRepository.delete(user);
     }
+
+    @Override
+    public void dropCol() {
+        userRepository.dropCol();
+    }
+
+
 }

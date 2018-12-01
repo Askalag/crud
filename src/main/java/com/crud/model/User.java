@@ -2,9 +2,7 @@ package com.crud.model;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import java.util.Date;
 
@@ -22,7 +20,7 @@ public class User {
     private String email;
     @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private Date ts;
-    
+
     public User(String nickName, String firstName, String lastName, int age, String email, Date ts) {
         this.nickName = nickName;
         this.firstName = firstName;
@@ -31,6 +29,4 @@ public class User {
         this.email = email;
         this.ts = ts;
     }
-
-
 }

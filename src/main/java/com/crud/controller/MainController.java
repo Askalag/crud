@@ -2,7 +2,6 @@ package com.crud.controller;
 
 import com.crud.model.User;
 import com.crud.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,6 +39,11 @@ public class MainController {
     @DeleteMapping("/user")
     public void removeUser(@RequestBody User user) {
         userService.removeUser(user);
+    }
+
+    @DeleteMapping("/user/dropAll")
+    public void removeUserCol() {
+        userService.dropCol();
     }
 
 }
