@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService{
 
-    private UserRepository userRepository;;
+    private UserRepository userRepository;
 
     public UserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
@@ -18,11 +18,6 @@ public class UserServiceImpl implements UserService{
     @Override
     public User getUserById(String id) {
         return userRepository.findFirstById(id);
-    }
-
-    @Override
-    public User getUserByNickName(String name) {
-        return null;
     }
 
     @Override
