@@ -1,13 +1,13 @@
-package com.crud.controller;
+package com.test.crud.controller;
 
-import com.crud.model.User;
-import com.crud.service.UserService;
+import com.test.crud.model.User;
+import com.test.crud.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api")
 public class MainController {
 
     private UserService userService;
@@ -41,7 +41,7 @@ public class MainController {
         userService.removeUser(user);
     }
 
-    @DeleteMapping("/user/dropAll")
+    @DeleteMapping("/user/dropAll7")
     public void removeUserCol() {
         userService.dropCol();
     }

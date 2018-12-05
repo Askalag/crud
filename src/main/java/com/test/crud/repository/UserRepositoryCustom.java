@@ -1,4 +1,4 @@
-package com.crud.repository;
+package com.test.crud.repository;
 
 
 public interface UserRepositoryCustom {

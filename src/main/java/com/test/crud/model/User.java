@@ -1,4 +1,4 @@
-package com.crud.model;
+package com.test.crud.model;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
