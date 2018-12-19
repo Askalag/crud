@@ -1,4 +1,4 @@
-package com.test.crud.model;
+package com.angularSpring.crud.model;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;

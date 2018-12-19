@@ -1,4 +1,4 @@
-package com.test.crud.repository;
+package com.angularSpring.crud.repository;
 
 
 import org.springframework.data.mongodb.core.MongoTemplate;

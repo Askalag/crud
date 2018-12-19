@@ -19325,7 +19325,7 @@ var OBJECT = 'object';
  * if a given property exist on a given element.
  *
  * NOTE: We don't yet support querying for types or events.
- * NOTE: This schema is auto extracted from `schema_extractor.ts` located in the test folder,
+ * NOTE: This schema is auto extracted from `schema_extractor.ts` located in the angularSpring folder,
  *       see dom_element_schema_registry_spec.ts
  */
 // =================================================================================================
@@ -22032,7 +22032,7 @@ var _AstToIrVisitor = /** @class */ (function () {
         // execution proceeds from left to right, the left most part of the expression must be guarded
         // first but, because member access is left associative, the right side of the expression is at
         // the top of the AST. The desired result requires lifting a copy of the the left part of the
-        // expression up to test it for blank before generating the unguarded version.
+        // expression up to angularSpring it for blank before generating the unguarded version.
         // Consider, for example the following expression: a?.b.c?.d.e
         // This results in the ast:
         //         .
@@ -43083,7 +43083,7 @@ function typeName(type) {
 */
 function isDifferent(a, b) {
     // NaN is the only value that is not equal to itself so the first
-    // test checks if both a and b are not NaN
+    // angularSpring checks if both a and b are not NaN
     return !(a !== a && b !== b) && a !== b;
 }
 function stringify$1(value) {

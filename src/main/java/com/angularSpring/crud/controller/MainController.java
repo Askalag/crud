@@ -1,7 +1,7 @@
-package com.test.crud.controller;
+package com.angularSpring.crud.controller;
 
-import com.test.crud.model.User;
-import com.test.crud.service.UserService;
+import com.angularSpring.crud.model.User;
+import com.angularSpring.crud.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

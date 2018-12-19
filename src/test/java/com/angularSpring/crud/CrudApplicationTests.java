@@ -1,4 +1,4 @@
-package com.test.crud;
+package com.angularSpring.crud;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

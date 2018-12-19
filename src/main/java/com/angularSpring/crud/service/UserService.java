@@ -1,6 +1,6 @@
-package com.test.crud.service;
+package com.angularSpring.crud.service;
 
-import com.test.crud.model.User;
+import com.angularSpring.crud.model.User;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.test.crud.repository;
+package com.angularSpring.crud.repository;
 
-import com.test.crud.model.User;
+import com.angularSpring.crud.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

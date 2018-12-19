@@ -437,7 +437,7 @@ function updateLink (link, options, obj) {
  *
  * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
  *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ * A rudimentary angularSpring suite is located at `angularSpring/fixUrls.js` and can be run via the `npm angularSpring` command.
  *
  */
 
